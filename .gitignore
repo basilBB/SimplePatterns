@@ -1,7 +1,70 @@
-.DS_Store
-applet
-application.linux32
-application.linux64
-application.windows32
-application.windows64
-application.macosx
+
+//Some Basic Patterns
+//BasilBB
+
+int x=0;
+int y=0;
+int z=0;
+
+void setup(){
+
+size (800,800);
+background(500,500,500);
+
+}
+
+void draw (){
+
+  
+//Pattern #1 
+
+line(20+x,20+x,780-x,20+x);
+line(780-x,780,780-x,20+x);
+line(20+x,780,20+x,20+x);
+x=10+x;
+if (x>=770){x=0;}
+
+
+//Pattern #2
+/*
+ line(20+x,20+x,780-x,20+x);
+  line(780-x,780,780-x,20+x);
+  line(20+x,780,20+x,20+x);
+  x=10+x;
+  if (x>=390){x=0;}
+*/
+
+
+//Pattern #3
+/*
+  line(20+x,20+x,780-x,20+x);
+  line(780-x,780,780-x,20+x);
+  line(20+x,780,20+x,20+x);
+  x=10+x;
+  if (x>=390){x=0;}
+  line(20+x,20+x,780-x,20+x);
+  line(780-x,780,780-x,20+x);
+  line(20+x,780,20+x,20+x);
+  x=20+x;
+  if (x>=390){x=0;}
+*/
+
+
+//Pattern #4
+/*
+line(20+x,400+x,780-x,20+x);
+x=5+x;
+if (x>=390){x=390;}
+*/
+
+
+//Pattern #5
+/*
+line(10,10,10,10);
+line(10+y,20+x,20+x,10+y);
+x=10+x;
+if (x>=780){x=770; y=10+y;}
+if (y>=780){y=780;}
+*/
+
+}
